@@ -1,0 +1,78 @@
+/****************************************
+*    Variables
+*****************************************/
+:root {
+  /* Colores */
+  --negro: #333333;
+  --blanco: #ffffff;
+  /* Intención de colores */
+  --textos: var(--negro);
+  --background: var(--blanco);
+  /* Tipografía */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-size: 100%;
+  --h1: 40px;
+  --h2: 33px;
+  --h3: 27px;
+  --h4: 24px;
+  --h5: 19px;
+  /* Utils */
+  --dots: var(--negro) dotted 2px;
+}
+
+/****************************************
+*    Base
+*****************************************/
+/*
+*  Orden ideal de acomodo de propiedades de CSS
+*
+* 1. Propiedades de layout (position, display)
+* 2. Propiedades de Box Model (width, height, margin, padding)
+* 3. Propiedades visuales (color, background, border, box-shadow)
+* 4. Propiedades de tipografía (font-family, font-size, text-align)
+* 5. Propiedades diversas (cursor, overflow, z-index)
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--textos);
+  background: var(--background);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+/****************************************
+*    Componentes
+*****************************************/
+
+/****************************************
+*    Utilidades
+*****************************************/
+[outline] {
+  outline: var(--dots);
+}
