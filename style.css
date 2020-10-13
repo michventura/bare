@@ -69,10 +69,16 @@ h5 {
 /****************************************
 *    Componentes
 *****************************************/
+.grid div:nth-child(1) {
+  grid-row: 2 / 3;
+}
 
 /****************************************
 *    Utilidades
 *****************************************/
-[outline] {
-  outline: var(--dots);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 }
+
